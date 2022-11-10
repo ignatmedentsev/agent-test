@@ -1,1 +1,0 @@
-export { apiUrls } from './apiUrls';
