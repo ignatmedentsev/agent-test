@@ -1,0 +1,10 @@
+<div class="main-center">
+  <div *ngIf="progress !== 0; else prepareUpdate">
+    <h2 *ngIf="timer <= 0" class="progress"><span>Downloading update: {{ progress }}</span> %</h2>
+    <h2 *ngIf="timer > 0" class="time"><span>{{ timer }}</span> will be installed</h2>
+    <button mat-raised-button *ngIf="progress === 100" (click)="updateNow()">Update now</button>
+  </div>
+  <ng-template #prepareUpdate>
+    <h1 class="loading">Fetching latest update</h1>
+  </ng-template>
+</div>
