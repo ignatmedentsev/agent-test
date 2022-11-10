@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "restartable": "rs",
+  "ignore": ["./src/render/**/*"],
+  "watch": [
+    "./src/main/**/*.ts",
+    "./src/common/**/*.ts"
+  ],
+  "ext": "ts"
+}

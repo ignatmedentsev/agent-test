@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="main-container">
+    <div class="logo" (click)="openBaseUrl()"></div>
+    <br>
+
+    <h1>Marketplace Agent</h1>
+    <div class="user-info" *ngIf="userName">
+      <p>Hello, <span>{{ userName }}</span></p>
+    </div>
+
+    <br>
+    <div class="actions">
+      <button mat-raised-button class="action-btn" (click)="onSelectFile()">Load ogranization secret</button>
+      <button mat-raised-button class="action-btn" (click)="openForm()">Enter ogranization</button>
+    </div>
+  </div>
+</div>
+
